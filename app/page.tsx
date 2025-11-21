@@ -120,7 +120,7 @@ export default function Home() {
                 </li>
                 <li className="mt-2 underline decoration-gray-300">
                   <a
-                    href="https://github.com/gaganbiswas/struct-icons"
+                    href="https://github.com/gaganbiswas/icons"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -135,7 +135,7 @@ export default function Home() {
                 Licensed under the{" "}
                 <a
                   className="underline decoration-gray-300"
-                  href="https://github.com/gaganbiswas/struct-icons/blob/main/LICENSE"
+                  href="https://github.com/gaganbiswas/icons/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -147,7 +147,7 @@ export default function Home() {
               </p>
               <a
                 target="_blank"
-                href="https://github.com/gaganbiswas/struct-icons/issues/new?assignees=gaganbiswas&labels=enhancement&projects=&template=icon-request.md&title=%5BIcon+Request%5D"
+                href="https://github.com/gaganbiswas/icons/issues/new?assignees=gaganbiswas&labels=enhancement&projects=&template=icon-request.md&title=%5BIcon+Request%5D"
                 rel="noopener noreferrer"
                 className="mt-8 bg-emerald-100/75 flex items-center justify-center px-4 py-2 rounded-md text-sm text-emerald-900 font-semibold hover:bg-emerald-50 transition-colors"
               >

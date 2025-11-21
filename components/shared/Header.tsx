@@ -19,21 +19,18 @@ const Header = () => {
       }`}
     >
       <div className="px-4 py-3 w-full flex items-center justify-between">
-        <div className="flex items-center font-bold gap-2">
-          <Image
-            src={"/struct-ui.svg"}
-            alt="Struct UI"
-            priority
-            width={36}
-            height={36}
-          />
-          <span className="text-xl select-none">StructUI</span>
-        </div>
+        <Image
+          src={"/struct-ui.svg"}
+          alt="Struct UI"
+          priority
+          width={36}
+          height={36}
+        />
 
         <nav>
           <a
             className="text-sm text-gray-800 flex items-center justify-center gap-2 px-4 py-2 hover:bg-gray-100 rounded font-medium"
-            href="https://github.com/gaganbiswas/struct-icons"
+            href="https://github.com/gaganbiswas/icons"
             target="_blank"
             rel="noopener noreferrer"
           >
