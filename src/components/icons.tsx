@@ -51,7 +51,7 @@ const Icons = ({ icons }: Props) => {
 
   return (
     <>
-      <div className="flex flex-wrap gap-5">
+      <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(40px,1fr))]">
         {icons.map((icon) => (
           <Icon
             icon={icon}
