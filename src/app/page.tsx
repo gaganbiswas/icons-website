@@ -40,9 +40,7 @@ const Home = () => {
       </div>
       <IconSearch mergedIcons={mergedIcons} />
       <div className="my-5">
-        <h2 className="text-xl mb-2 font-medium my-5 underline decoration-neutral-400 decoration-1 underline-offset-2">
-          Usage
-        </h2>
+        <h2 className="text-xl mb-2 font-medium my-5">Usage:</h2>
         <p className="text-lg my-5">
           You can always click on the icons above to copy the svg and use it in
           your desired framework.
