@@ -53,7 +53,7 @@ const Home = () => {
         <p className="text-lg my-5">
           Import the icons into your React project:
         </p>
-        <p className="whitespace-pre bg-neutral-400/10 p-5 rounded-lg text-sm">
+        <p className="my-5 whitespace-pre-wrap bg-neutral-400/10 p-5 rounded-lg text-sm overflow-auto">
           <code>{`import { ArrowRight, Sun } from "@struct-ui/icons";
 
 function MyComponent() {
