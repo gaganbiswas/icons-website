@@ -4,11 +4,10 @@ import React, { Dispatch, SetStateAction, useState } from "react";
 import copy from "copy-to-clipboard";
 
 type Props = {
-  title: string;
   icons: IconProps[];
 };
 
-type IconProps = {
+export type IconProps = {
   name: string;
   tags: string[];
   svg: any;
@@ -26,7 +25,7 @@ const Icon = ({
   return (
     <button
       title={icon.name}
-      className="text-emerald-800 hover:bg-emerald-300/10 w-10 h-10 rounded-md flex items-center justify-center"
+      className="hover:bg-neutral-100 dark:hover:bg-neutral-50/10 w-10 h-10 rounded-md flex items-center justify-center"
       onClick={() => {
         copy(icon.svg);
         setCopiedSvg(icon.svg);
@@ -38,7 +37,7 @@ const Icon = ({
   );
 };
 
-const Icons = ({ title, icons }: Props) => {
+const Icons = ({ icons }: Props) => {
   const [hasCopied, setHasCopied] = React.useState(false);
   const [copiedSvg, setCopiedSvg] = useState("");
 
@@ -52,25 +51,20 @@ const Icons = ({ title, icons }: Props) => {
 
   return (
     <>
-      <div className="flex flex-col max-w-max">
-        <span className="font-semibold text-xs text-gray-800 tracking-wide">
-          {title}
-        </span>
-        <div className="mt-5 flex items-center flex-wrap gap-5">
-          {icons.map((icon) => (
-            <Icon
-              icon={icon}
-              key={icon.name}
-              setHasCopied={setHasCopied}
-              setCopiedSvg={setCopiedSvg}
-            />
-          ))}
-        </div>
+      <div className="flex flex-wrap gap-5">
+        {icons.map((icon) => (
+          <Icon
+            icon={icon}
+            key={icon.name}
+            setHasCopied={setHasCopied}
+            setCopiedSvg={setCopiedSvg}
+          />
+        ))}
       </div>
       {hasCopied ? (
-        <div className="fixed z-40 bottom-10 bg-gray-900 py-2 px-4 rounded-md text-gray-50 flex items-center gap-2 left-1/2 w-max -translate-x-1/2">
-          <span className="text-sm">SVG copied to clipboard</span>
+        <div className="fixed z-40 bottom-10 bg-neutral-950 dark:bg-neutral-50 py-2 px-4 rounded-md text-neutral-50 dark:text-neutral-950 flex items-center gap-4 left-1/2 w-max -translate-x-1/2">
           <span dangerouslySetInnerHTML={{ __html: copiedSvg }} />
+          <span className="mt-0.5">SVG copied to clipboard</span>
         </div>
       ) : null}
     </>
